@@ -1,3 +1,4 @@
+import Loader from "../../assets/svg/Loader";
 import Section from "../UI/Section";
 import TaskItem from "./TaskItem";
 import classes from "./Tasks.module.css";
@@ -23,7 +24,7 @@ const Tasks = (props) => {
   }
 
   if (props.loading) {
-    content = "Loading tasks...";
+    content = <Loader />;
   }
 
   return (
